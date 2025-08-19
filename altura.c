@@ -89,7 +89,7 @@ void selection_int_asc(int *v, int n, Metricas *m) {
 }
 
 int main(void) {
-    int alturas_base[] = {160, 170, 163, 174, 181, 179, 190, 155, 200, 178, 161};
+    int alturas_base[] = {160, 170, 163, 174, 181, 179, 190, 155, 200, 178};
     int n_alturas = (int)(sizeof(alturas_base) / sizeof(alturas_base[0]));
     int a1[11], a2[11], a3[11];
     memcpy(a1, alturas_base, sizeof(alturas_base));
