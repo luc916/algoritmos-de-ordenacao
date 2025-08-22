@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h> // memcpy
+#include <string.h> 
 
 // --------------------
 // Métricas de execução
@@ -15,18 +15,16 @@ void zera_metricas(Metricas *m) {
 }
 
 // --------------------
-// Funções auxiliares
+// Utilidades
 // --------------------
 
-// Troca dois inteiros
 void swap_int(int *a, int *b, Metricas *m) {
     int temp = *a;
     *a = *b;
     *b = temp;
-    m->trocas++;  // Conta a troca
+    m->trocas++; 
 }
 
-// Imprime um vetor de inteiros
 void imprime_int(int *v, int n, const char *nome) {
     printf("%s: ", nome);
     for (int i = 0; i < n; i++) {
@@ -34,10 +32,6 @@ void imprime_int(int *v, int n, const char *nome) {
     }
     printf("\n");
 }
-
-// --------------------
-// Algoritmos de Ordenação
-// --------------------
 
 // Bubble Sort (int crescente)
 void bubble_int_asc(int *v, int n, Metricas *m) {
